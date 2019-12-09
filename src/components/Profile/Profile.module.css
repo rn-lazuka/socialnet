@@ -1,9 +1,7 @@
-
-.content {
-    grid-area: c;
-    background-color: cyan;
-}
-
 .content img {
     width: 1200px;
+}
+
+.pic img {
+    height: 400px;
 }

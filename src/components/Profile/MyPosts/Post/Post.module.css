@@ -5,3 +5,7 @@
     width:50px;
     border-radius:20px;
 }
+
+.item span {
+    color: darkblue;
+}

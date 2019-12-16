@@ -5,13 +5,8 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 
 
-const Profile = () => {
-    let posts = [
-        {message: 'Вжух вжух вжух, мечи воздух рассекают', likeCount: 999},
-        {message: 'Great, we can go next step!', likeCount: 17},
-        {message: 'Памагити йа не мэсный', likeCount: 0},
-        {message: 'Кто-нибудь, убейте его словарем!', likeCount: 666}
-    ];
+const Profile = (props) => {
+   let posts=props.posts;
 
     return <div className={s.content}>
         <ProfileInfo/>

@@ -10,3 +10,11 @@
 .item a.activeLink {
     color: gold;
 }
+.sidebar a {
+    font-size: x-large;
+    color: aliceblue;
+    text-decoration: none;
+}
+.sidebar a.activeLink {
+    color: gold;
+}

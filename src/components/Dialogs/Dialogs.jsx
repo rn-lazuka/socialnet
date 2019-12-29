@@ -4,15 +4,14 @@ import Dialog from "./Dialog/Dialog";
 import Message from "./Message/Message";
 
 
-
 const Dialogs = (props) => {
-    let dialogsElements = props.state.dialogs.map ( d => <Dialog name={d.name} id={d.id}/>);
-    let messagesElements = props.state.messages.map ( m => <Message message={m.message} id={m.id}/>);
+    let dialogsElements = props.state.dialogs.map(d => <Dialog name={d.name} id={d.id}/>);
+    let messagesElements = props.state.messages.map(m => <Message message={m.message} id={m.id}/>);
     let newPostElement = React.createRef();
     let addNewPost = () => {
         let text = newPostElement.current.value;
         alert(text);
-        newPostElement.current.value="";
+        newPostElement.current.value = "";
     }
     return (
         <div className={s.dialogs}>
@@ -21,14 +20,15 @@ const Dialogs = (props) => {
             </div>
             <div className={s.messages}>
                 {messagesElements}
-            </div>
-            <div>
                 <div>
                     <textarea ref={newPostElement}> </textarea>
                 </div>
                 <div>
                     <button onClick={addNewPost}>Add post</button>
                 </div>
+            </div>
+            <div>
+
             </div>
         </div>
 

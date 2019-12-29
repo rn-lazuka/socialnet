@@ -1,10 +1,10 @@
 let state = {
     profilePage :{
         posts : [
-            {message: 'Вжух вжух вжух, мечи воздух рассекают', likeCount: 999},
-            {message: 'Great, we can go next step!', likeCount: 17},
-            {message: 'Памагити йа не мэсный', likeCount: 0},
-            {message: 'Кто-нибудь, убейте его словарем!', likeCount: 666}
+            {id:1, message: 'Вжух вжух вжух, мечи воздух рассекают', likeCount: 999},
+            {id:2, message: 'Great, we can go next step!', likeCount: 17},
+            {id:3, message: 'Кто не работает, тот ест.', likeCount: 0},
+            {id:4, message: 'Жить хорошо, а хорошо жить ещё лучше!', likeCount: 666}
         ]
     },
     dialogsPage:{
@@ -26,7 +26,13 @@ let state = {
         ]
     },
     sidebar:{}
+};
+
+export let addPost = (postMessage)=>{
+    let newPost = {id:5, message:'Хорошо плывет, эта группа в полосатых купальниках.', likeCount:33};
+state.profilePage.posts.push(newPost);
 }
+
 
 
 export default state

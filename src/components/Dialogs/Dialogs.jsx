@@ -2,19 +2,20 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import Dialog from "./Dialog/Dialog";
 import Message from "./Message/Message";
-
+import {addDialogPostActionCreator, onMessageChangeActionCreator} from "../../Redux/State";
 
 const Dialogs = (props) => {
     let dialogsElements = props.dialogsPage.dialogs.map(d => <Dialog name={d.name} id={d.id}/>);
     let messagesElements = props.dialogsPage.messages.map(m => <Message message={m.message} id={m.id}/>);
     let newPostElement = React.createRef();
 
-    let addNewPost = () => {
-        props.dispatch({type:'ADD-DIALOG-POST'});
+
+    let addDialogPost = () => {
+        props.dispatch(addDialogPostActionCreator());
     };
-    let onPostChange = () => {
+    let onMessageChange = () => {
         let text = newPostElement.current.value;
-        props.dispatch({type:'UPDATE-NEW-MESSAGE',newText:text})
+        props.dispatch(onMessageChangeActionCreator(text))
     };
     return (
         <div className={s.dialogs}>
@@ -25,11 +26,11 @@ const Dialogs = (props) => {
                 {messagesElements}
                 <div>
                     <textarea value={props.newMessageText}
-                              onChange={onPostChange}
+                              onChange={onMessageChange}
                               ref={newPostElement}> </textarea>
                 </div>
                 <div>
-                    <button onClick={addNewPost}>Add post</button>
+                    <button onClick={addDialogPost}>Add post</button>
                 </div>
             </div>
             <div>

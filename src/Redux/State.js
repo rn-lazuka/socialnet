@@ -1,5 +1,11 @@
+const ADD_POST = 'ADD-POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+const ADD_DIALOG_POST = 'ADD-DIALOG-POST';
+const UPDATE_NEW_MESSAGE = 'UPDATE-NEW-MESSAGE';
+
+
 let store = {
-    _state :{
+    _state: {
         profilePage: {
             posts: [
                 {id: 1, message: 'Вжух вжух вжух, мечи воздух рассекают', likeCount: 999},
@@ -30,17 +36,17 @@ let store = {
         },
         sidebar: {}
     },
-    _callSubscriber () {
+    _callSubscriber() {
         console.log("State changed")
     },
-    getState(){
+    getState() {
         return this._state
     },
-    subscribe (observer) {
+    subscribe(observer) {
         this._callSubscriber = observer;
     },
-    dispatch(action){
-        if(action.type==='ADD-POST'){
+    dispatch(action) {
+        if (action.type === ADD_POST) {
             let newPost = {
                 id: 5,
                 message: this._state.profilePage.newPostText,
@@ -49,10 +55,10 @@ let store = {
             this._state.profilePage.posts.push(newPost);
             this._state.profilePage.newPostText = '';
             this._callSubscriber(this._state);
-        } else if (action.type==='UPDATE-NEW-POST-TEXT'){
+        } else if (action.type === UPDATE_NEW_POST_TEXT) {
             this._state.profilePage.newPostText = action.newText;
             this._callSubscriber(this._state);
-        }else if (action.type==='ADD-DIALOG-POST') {
+        } else if (action.type === ADD_DIALOG_POST) {
             let newPost = {
                 id: 7,
                 message: this._state.dialogsPage.newMessageText,
@@ -60,11 +66,23 @@ let store = {
             this._state.dialogsPage.messages.push(newPost);
             this._state.dialogsPage.newMessageText = '';
             this._callSubscriber(this._state);
-        } else if (action.type==='UPDATE-NEW-MESSAGE'){
+        } else if (action.type === UPDATE_NEW_MESSAGE) {
             this._state.dialogsPage.newMessageText = action.newText;
             this._callSubscriber(this._state);
         }
     }
+};
+export const addPostActionCreator = () => {
+    return {type: ADD_POST}
+};
+export const onPostChangeActionCreator = (text) => {
+    return {type: UPDATE_NEW_POST_TEXT, newText: text}
+};
+export const addDialogPostActionCreator = () => {
+    return {type: ADD_DIALOG_POST}
+};
+export const onMessageChangeActionCreator = (text) => {
+    return {type: UPDATE_NEW_MESSAGE, newText: text}
 };
 
 export default store

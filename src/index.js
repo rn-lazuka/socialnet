@@ -8,14 +8,11 @@ import App from './App';
 import {BrowserRouter} from "react-router-dom";
 
 
-export let renderEntireTree = (state)=>{
+ let renderEntireTree = (state)=>{
     ReactDOM.render(
         <BrowserRouter>
             <App state={state}
-                 addDialogPost={store.addDialogPost.bind(store)}
-                 updateNewMessage={store.updateNewMessage.bind(store)}
-                 addPost={store.addPost.bind(store)}
-                 updateNewPostText={store.updateNewPostText.bind(store)}/>
+                 dispatch={store.dispatch.bind(store)}/>
         </BrowserRouter>, document.getElementById('root'));
 
 };

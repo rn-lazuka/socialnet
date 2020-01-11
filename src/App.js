@@ -13,7 +13,6 @@ import Friends from "./components/Sidebar/Sidebar";
 
 const App = (props) => {
 
-
     return (
 
         <div className='app-wrapper'>
@@ -23,10 +22,8 @@ const App = (props) => {
                 <Route path='/dialogs' render={() => <Dialogs dialogsPage={props.state.dialogsPage}
                                                               messages={props.state.dialogsPage.messages}
                                                               newMessageText={props.state.dialogsPage.newMessageText}
-                                                              updateNewMessage={props.updateNewMessage}
-                                                              addDialogPost={props.addDialogPost}/>}/>
-                <Route path='/profile' render={() => <Profile addPost={props.addPost}
-                                                              updateNewPostText={props.updateNewPostText}
+                                                              dispatch={props.dispatch}/>}/>
+                <Route path='/profile' render={() => <Profile dispatch={props.dispatch}
                                                               profilePage={props.state.profilePage}/>}/>
                 <Route path='/news' component={News}/>
                 <Route path='/music' component={Music}/>

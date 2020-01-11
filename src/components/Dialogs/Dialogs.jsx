@@ -10,11 +10,11 @@ const Dialogs = (props) => {
     let newPostElement = React.createRef();
 
     let addNewPost = () => {
-        props.addDialogPost();
+        props.dispatch({type:'ADD-DIALOG-POST'});
     };
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        props.updateNewMessage(text)
+        props.dispatch({type:'UPDATE-NEW-MESSAGE',newText:text})
     };
     return (
         <div className={s.dialogs}>

@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c68d860a-6e07-4fef-8ef3-cb3537e3bf49" name="Default Changelist" comment="added render.js and renderEntireTree() for redrawing">
+      <change afterPath="$PROJECT_DIR$/src/Redux/dialogs-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/profile-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/sidebar-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/State.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
@@ -14,6 +17,13 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="kabzda" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,26 +41,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Redux" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\it-kamasutra\kabzda\src\Redux" />
+      <recent name="C:\it-kamasutra\kabzda\src" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\Sidebar\Friends" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\Sidebar" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\Dialogs\Message" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\it-kamasutra\kabzda\src\components\Profile\MyPosts" />
       <recent name="C:\it-kamasutra\kabzda\src\components\Profile" />
       <recent name="C:\it-kamasutra\kabzda\src\components\Navbar" />
       <recent name="C:\it-kamasutra\kabzda\src\components\Header" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\it-kamasutra\kabzda\src" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\Sidebar\Friends" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\Sidebar" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\Dialogs\Message" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\Dialogs\Dialog" />
     </key>
   </component>
   <component name="RunManager">
@@ -120,7 +130,7 @@
       <workItem from="1578222916814" duration="10608000" />
       <workItem from="1578306352599" duration="2221000" />
       <workItem from="1578321996697" duration="2730000" />
-      <workItem from="1578738740799" duration="5145000" />
+      <workItem from="1578738740799" duration="9936000" />
     </task>
     <task id="LOCAL-00001" summary="added props callback">
       <created>1577651757209</created>
@@ -165,10 +175,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="821" height="164" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575457667451" />
-    <state x="323" y="0" key="SettingsEditor" timestamp="1576343563102">
+    <state x="323" y="0" key="SettingsEditor" timestamp="1578755440501">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="323" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1576343563102" />
+    <state x="323" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1578755440501" />
     <state x="261" y="79" key="Vcs.Push.Dialog.v2" timestamp="1577713884474">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -193,6 +203,12 @@
           <url>file://$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx</url>
           <line>20</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Redux/State.js</url>
+          <line>17</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -2,19 +2,18 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import Dialog from "./Dialog/Dialog";
 import Message from "./Message/Message";
-import {addDialogPostActionCreator, onMessageChangeActionCreator} from "../../Redux/State";
+import {addDialogPostActionCreator, onMessageChangeActionCreator} from "../../Redux/dialogs-reducer";
 
 const Dialogs = (props) => {
     let dialogsElements = props.dialogsPage.dialogs.map(d => <Dialog name={d.name} id={d.id}/>);
     let messagesElements = props.dialogsPage.messages.map(m => <Message message={m.message} id={m.id}/>);
-    let newPostElement = React.createRef();
 
 
     let addDialogPost = () => {
         props.dispatch(addDialogPostActionCreator());
     };
-    let onMessageChange = () => {
-        let text = newPostElement.current.value;
+    let onMessageChange = (e) => {
+        let text = e.currentTarget.value;
         props.dispatch(onMessageChangeActionCreator(text))
     };
     return (
@@ -26,8 +25,8 @@ const Dialogs = (props) => {
                 {messagesElements}
                 <div>
                     <textarea value={props.newMessageText}
-                              onChange={onMessageChange}
-                              ref={newPostElement}> </textarea>
+                              onChange={onMessageChange}>
+                    </textarea>
                 </div>
                 <div>
                     <button onClick={addDialogPost}>Add post</button>

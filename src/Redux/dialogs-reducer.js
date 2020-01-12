@@ -21,19 +21,20 @@ let initialState= { dialogs: [
 
 }
 const dialogsReducer = (state= initialState, action) => {
-    if (action.type === ADD_DIALOG_POST) {
-        let newPost = {
-            id: 7,
-            message: state.newMessageText,
-        };
-       state.messages.push(newPost);
-        state.newMessageText = '';
-    } else if (action.type === UPDATE_NEW_MESSAGE) {
-        state.newMessageText = action.newText;
-
+    switch (action.type) {
+        case ADD_DIALOG_POST:
+            let newPost = {
+                id: 7,
+                message: state.newMessageText,
+            };
+            state.messages.push(newPost);
+            state.newMessageText = '';
+            return state;
+        case UPDATE_NEW_MESSAGE:
+            state.newMessageText = action.newText;
+            return state;
+        default: return state
     }
-
-    return state;
 };
 export const addDialogPostActionCreator = () => ({type: ADD_DIALOG_POST});
 export const onMessageChangeActionCreator = (text) => ({type: UPDATE_NEW_MESSAGE, newText: text});

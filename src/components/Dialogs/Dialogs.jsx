@@ -2,19 +2,17 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import Dialog from "./Dialog/Dialog";
 import Message from "./Message/Message";
-import {addDialogPostActionCreator, onMessageChangeActionCreator} from "../../Redux/dialogs-reducer";
 
 const Dialogs = (props) => {
-    let dialogsElements = props.dialogsPage.dialogs.map(d => <Dialog name={d.name} id={d.id}/>);
-    let messagesElements = props.dialogsPage.messages.map(m => <Message message={m.message} id={m.id}/>);
-
+    let dialogsElements = props.dialogs.map(d => <Dialog name={d.name} id={d.id}/>);
+    let messagesElements = props.messages.map(m => <Message message={m.message} id={m.id}/>);
 
     let addDialogPost = () => {
-        props.dispatch(addDialogPostActionCreator());
+        props.addDialogPost();
     };
     let onMessageChange = (e) => {
         let text = e.currentTarget.value;
-        props.dispatch(onMessageChangeActionCreator(text))
+        props.onMessageChange(text);
     };
     return (
         <div className={s.dialogs}>
@@ -38,6 +36,6 @@ const Dialogs = (props) => {
         </div>
 
     )
-}
+};
 
 export default Dialogs;

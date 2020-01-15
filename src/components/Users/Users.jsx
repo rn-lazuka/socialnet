@@ -1,44 +1,14 @@
 import React from 'react';
 import s from './Users.module.css';
-
+import * as axios from 'axios'
+import userPhoto from '../../assets/images/user.png'
 
 const Users = (props) => {
     if (props.users.length === 0) {
-        props.setUsers([
-                {
-                    id: 1,
-                    photoURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRloruZAb-yoDnwuI1cUnNxt0ECY0zKEMzmMBLLQ-Ogicnu4RFmUA&s',
-                    followed: false,
-                    fullName: 'Roman',
-                    status: 'front-end',
-                    location: {country: 'Belarus', city: 'Minsk'}
-                },
-                {
-                    id: 2,
-                    photoURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRloruZAb-yoDnwuI1cUnNxt0ECY0zKEMzmMBLLQ-Ogicnu4RFmUA&s',
-                    followed: true,
-                    fullName: 'Dimych',
-                    status: 'sensei programmer',
-                    location: {country: 'Belarus', city: 'Minsk'}
-                },
-                {
-                    id: 3,
-                    photoURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRloruZAb-yoDnwuI1cUnNxt0ECY0zKEMzmMBLLQ-Ogicnu4RFmUA&s',
-                    followed: true,
-                    fullName: 'Valentin',
-                    status: 'born to be head of sales',
-                    location: {country: 'Belarus', city: 'Minsk'}
-                },
-                {
-                    id: 4,
-                    photoURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRloruZAb-yoDnwuI1cUnNxt0ECY0zKEMzmMBLLQ-Ogicnu4RFmUA&s',
-                    followed: false,
-                    fullName: 'Kristina',
-                    status: 'pinky pony',
-                    location: {country: 'Ukraine', city: 'Kiev'}
-                }
-            ]
-        )
+
+        axios.get("https://social-network.samuraijs.com/api/1.0/users").then(response=>{
+
+            props.setUsers(response.data.items)});
     }
     return (
 
@@ -46,7 +16,7 @@ const Users = (props) => {
             <div key={u.id} classname={s.user}>
                 <span>
                  <div>
-                   <img src={u.photoURL} className={s.photo}/>
+                   <img src={u.photos.small !=null? u.photos.small: userPhoto} className={s.photo}/>
                   </div>
                   <div>
                         {u.followed ? <button onClick={() => props.onUnFollowClick(u.id)}>Unfollow</button> :
@@ -55,7 +25,7 @@ const Users = (props) => {
               </span>
                 <span>
                     <div>
-                        {u.fullName}
+                        {u.name}
                     </div>
                     <div>
                         {u.status}
@@ -63,10 +33,10 @@ const Users = (props) => {
                 </span>
                 <span>
                      <div>
-                        {u.location.country}
+                       {"u.location.country"}
                      </div>
                      <div>
-                         {u.location.city}
+                       {"u.location.city"}
                      </div>
                 </span>
             </div>)

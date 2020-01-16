@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c68d860a-6e07-4fef-8ef3-cb3537e3bf49" name="Default Changelist" comment="added render.js and renderEntireTree() for redrawing">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/user.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Music/Music.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Music/Music.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Music/Music.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Music/Music.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/News/News.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/News.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/News/News.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/News.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Settings/Settings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Settings/Settings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Settings/Settings.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Settings/Settings.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +141,8 @@
       <workItem from="1578999092673" duration="8916000" />
       <workItem from="1579013707571" duration="644000" />
       <workItem from="1579028199763" duration="616000" />
-      <workItem from="1579118632607" duration="2865000" />
+      <workItem from="1579118632607" duration="2870000" />
+      <workItem from="1579196605080" duration="2800000" />
     </task>
     <task id="LOCAL-00001" summary="added props callback">
       <created>1577651757209</created>

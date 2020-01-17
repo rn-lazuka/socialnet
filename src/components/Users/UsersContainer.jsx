@@ -1,16 +1,15 @@
 import {connect} from "react-redux";
 import {
-    followAC,
-    setUsersAC,
-    unfollowAC,
-    setCurrentPageAC,
-    setTotalUsersCountAC,
-    toggleIsFetchingAC
+    follow,
+    setUsers,
+    unfollow,
+    setCurrentPage,
+    setTotalUsersCount,
+    toggleIsFetching
 } from "../../Redux/users-reducer";
 import * as axios from "axios";
 import Users from "./Users";
 import React from "react";
-import loading from "../../assets/images/loading.svg"
 import Preloader from "../common/Preloader/Preloader";
 
 
@@ -45,8 +44,8 @@ class UsersContainer extends React.Component {
                    currentPage={this.props.currentPage}
                    users={this.props.users}
                    onPageChanged={this.onPageChanged}
-                   onUnFollowClick={this.props.onUnFollowClick}
-                   onFollowClick={this.props.onFollowClick}
+                   unfollow={this.props.unfollow}
+                   follow={this.props.follow}
             />}
         </>
     }
@@ -63,27 +62,5 @@ let mapStateToProps = (state) => {
 
 };
 
-let mapDispatchToProps = (dispatch) => {
-    return {
-        onFollowClick: (userId) => {
-            dispatch(followAC(userId))
-        },
-        onUnFollowClick: (userId) => {
-            dispatch(unfollowAC(userId))
-        },
-        setUsers: (users) => {
-            dispatch(setUsersAC(users))
-        },
-        setCurrentPage: (p) => {
-            dispatch(setCurrentPageAC(p))
-        },
-        setTotalUsersCount: (totalCount) => {
-            dispatch(setTotalUsersCountAC(totalCount))
-        },
-        toggleIsFetching: (isFetching) => {
-            dispatch(toggleIsFetchingAC(isFetching))
-        },
-    }
-};
 
-export default connect(mapStateToProps, mapDispatchToProps)(UsersContainer);
+export default connect(mapStateToProps, {follow,unfollow,setUsers,setCurrentPage,setTotalUsersCount,toggleIsFetching})(UsersContainer);

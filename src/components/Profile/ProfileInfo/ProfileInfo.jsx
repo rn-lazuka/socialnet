@@ -16,7 +16,7 @@ return  <Preloader/>
             <img alt={'#'} src={props.profile.photos.large}/>
             <div>Имя:{props.profile.fullName}</div>
             <div>Обо мне:{props.profile.aboutMe}</div>
-            <div>Контакты:<a href={props.profile.contacts.vk}>VK</a></div>
+            <div>Контакты:<a href={props.profile.contacts.vk}>{props.profile.contacts.vk}</a></div>
 
         </div>
 

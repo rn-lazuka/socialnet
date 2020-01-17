@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c68d860a-6e07-4fef-8ef3-cb3537e3bf49" name="Default Changelist" comment="added render.js and renderEntireTree() for redrawing">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/loading.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/users-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profile-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +43,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -46,18 +51,18 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\it-kamasutra\kabzda\src\components\Users" />
-      <recent name="C:\it-kamasutra\kabzda\src\Redux" />
-      <recent name="C:\it-kamasutra\kabzda\src\components" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\Dialogs" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\Profile\MyPosts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\it-kamasutra\kabzda\src\components\Profile\MyPosts" />
       <recent name="C:\it-kamasutra\kabzda\src\components\Profile" />
       <recent name="C:\it-kamasutra\kabzda\src\components\Navbar" />
       <recent name="C:\it-kamasutra\kabzda\src\components\Header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\it-kamasutra\kabzda\src\components\Profile" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\Users" />
+      <recent name="C:\it-kamasutra\kabzda\src\Redux" />
+      <recent name="C:\it-kamasutra\kabzda\src\components" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\Dialogs" />
     </key>
   </component>
   <component name="RunManager">
@@ -136,7 +141,7 @@
       <workItem from="1579028199763" duration="616000" />
       <workItem from="1579118632607" duration="2870000" />
       <workItem from="1579196605080" duration="9358000" />
-      <workItem from="1579254744112" duration="4751000" />
+      <workItem from="1579254744112" duration="9261000" />
     </task>
     <task id="LOCAL-00001" summary="added props callback">
       <created>1577651757209</created>

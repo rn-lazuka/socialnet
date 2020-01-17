@@ -1,9 +1,18 @@
 .content img {
     width: 1200px;
 }
-.pic img {
-    height: 400px;
+.pic {
+    height: 200px ;
+    width: 100%;
+    background-image: url("https://www.pond5.com/images/images_db/vlp/image-hero-poster.jpg");
+background-position: center;
+
 }
 .descriptionBlock {
     padding: 10px;
+
+}
+.descriptionBlock img {
+    height: 400px;
+    width: 500px;
 }

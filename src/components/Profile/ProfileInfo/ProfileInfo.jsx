@@ -1,15 +1,23 @@
 import React from 'react';
 import s from './ProfileInfo.module.css';
+import Preloader from "../../common/Preloader/Preloader";
 
 
 
 const ProfileInfo = (props) => {
+    if (!props.profile){
+return  <Preloader/>
+    }
     return <div>
         <div className={s.pic}>
-            <img alt={"background"} src='https://www.pond5.com/images/images_db/vlp/image-hero-poster.jpg'/>
+
         </div>
         <div className={s.descriptionBlock}>
-            ava+description
+            <img alt={'#'} src={props.profile.photos.large}/>
+            <div>Имя:{props.profile.fullName}</div>
+            <div>Обо мне:{props.profile.aboutMe}</div>
+            <div>Контакты:<a href={props.profile.contacts.vk}>VK</a></div>
+
         </div>
 
     </div>

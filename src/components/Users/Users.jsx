@@ -31,12 +31,12 @@ let Users = (props) => {
                  <div>
                      {u.followed ?
                          <button disabled={props.followingInProgress.some(id=> id===u.id)} onClick={() => {
-                             props.onUnFollowClick(u.id, props.unfollow,props.toggleIsFollowingProgress)
+                             props.unfollow(u.id)
                          }
                          }>Unfollow</button> :
 
                          <button disabled={props.followingInProgress.some(id=> id===u.id)} onClick={() => {
-                             props.onFollowClick(u.id, props.follow,props.toggleIsFollowingProgress)
+                             props.follow(u.id)
                          }
                          }>Follow</button>
                      }

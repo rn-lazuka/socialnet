@@ -13,20 +13,24 @@ export const UsersAPI = {
                 return response.data
             })
     },
-    onFollowClick(id, follow) {
+    onFollowClick(id, follow,toggleIsFollowingProgress) {
+        toggleIsFollowingProgress(true,id);
         return instance.post(`follow/${id}`)
             .then(response => {
                 if (response.data.resultCode === 0) {
                     follow(id)
                 }
+                toggleIsFollowingProgress(false,id)
             });
     },
-    onUnFollowClick(id, unfollow) {
+    onUnFollowClick(id, unfollow,toggleIsFollowingProgress) {
+        toggleIsFollowingProgress(true,id);
         return instance.delete(`follow/${id}`)
             .then(response => {
                 if (response.data.resultCode === 0) {
                     unfollow(id)
                 }
+                toggleIsFollowingProgress(false,id)
             });
     }
 };

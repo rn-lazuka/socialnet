@@ -17,11 +17,11 @@ export const UsersAPI = {
         return instance.delete(`follow/${id}`)
     },
     getProfile(userId) {
-        return instance.get(`profile/`+userId)
+        return instance.get(`profile/${userId}`)
     }
 };
 export const AuthAPI = {
-    authMe(setAuthUserData) {
+    authMe() {
         return instance.get(`auth/me`)
     }
 };

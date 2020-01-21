@@ -15,13 +15,23 @@ export const UsersAPI = {
     },
     onUnFollowClick(id) {
         return instance.delete(`follow/${id}`)
-    },
-    getProfile(userId) {
-        return instance.get(`profile/${userId}`)
     }
 };
+
 export const AuthAPI = {
     authMe() {
         return instance.get(`auth/me`)
+    }
+}
+
+export const ProfileAPI = {
+    getProfile(userId) {
+        return instance.get(`profile/${userId}`)
+    },
+    getStatus(userId) {
+        return instance.get(`profile/status/` + userId)
+    },
+    updateStatus(status) {
+        return instance.put(`profile/status/`,{status:status})
     }
 };

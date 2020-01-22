@@ -1,4 +1,4 @@
-import {addDialogPostActionCreator, onMessageChangeActionCreator} from "../../Redux/dialogs-reducer";
+import {addDialogPostActionCreator} from "../../Redux/dialogs-reducer";
 import Dialogs from "./Dialogs";
 import {connect} from "react-redux";
 import {withAuthRedirect} from "../../hok/withAuthRedirect";
@@ -14,17 +14,14 @@ let mapStateToProps =(state)=>{
 };
 let mapDispatchToProps =(dispatch)=>{
     return{
-        addDialogPost:()=>{
-            dispatch(addDialogPostActionCreator());
-        },
-        onMessageChange:(text)=>{
-            dispatch(onMessageChangeActionCreator(text))
-        },
+        addDialogPost:(message)=>{
+            dispatch(addDialogPostActionCreator(message));
+        }
     }
 };
 
 
 export default compose (
     connect (mapStateToProps,mapDispatchToProps),
-    withAuthRedirect
+    // withAuthRedirect
 )(Dialogs)

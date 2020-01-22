@@ -1,5 +1,4 @@
 const ADD_DIALOG_POST = 'ADD-DIALOG-POST';
-const UPDATE_NEW_MESSAGE = 'UPDATE-NEW-MESSAGE';
 
 let initialState= { dialogs: [
         {name: 'Sasha', id: 1},
@@ -17,7 +16,6 @@ let initialState= { dialogs: [
         {id: 5, message: 'YOOOO'},
         {id: 6, message: 'WAZZZZUUUP'}
     ],
-    newMessageText: ""
 
 }
 const dialogsReducer = (state= initialState, action) => {
@@ -25,17 +23,13 @@ const dialogsReducer = (state= initialState, action) => {
         case ADD_DIALOG_POST: {
             let newPost = {
                 id: 7,
-                message: state.newMessageText,
+                message: action.message,
             };
           return  {...state,messages:[...state.messages,newPost],newMessageText:''}
-        }
-        case UPDATE_NEW_MESSAGE: {
-           return {...state,newMessageText:action.newText};
         }
         default: return state
     }
 };
-export const addDialogPostActionCreator = () => ({type: ADD_DIALOG_POST});
-export const onMessageChangeActionCreator = (text) => ({type: UPDATE_NEW_MESSAGE, newText: text});
+export const addDialogPostActionCreator = (message) => ({type: ADD_DIALOG_POST,message});
 
 export default dialogsReducer;

@@ -4,10 +4,11 @@
     <list default="true" id="c68d860a-6e07-4fef-8ef3-cb3537e3bf49" name="Default Changelist" comment="added render.js and renderEntireTree() for redrawing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/auth-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +146,8 @@
       <workItem from="1579509129841" duration="24006000" />
       <workItem from="1579595684526" duration="17453000" />
       <workItem from="1579714595143" duration="2509000" />
-      <workItem from="1579771429116" duration="11984000" />
+      <workItem from="1579771429116" duration="14202000" />
+      <workItem from="1579854886843" duration="1299000" />
     </task>
     <task id="LOCAL-00001" summary="added props callback">
       <created>1577651757209</created>
@@ -223,10 +225,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1578753383316" />
-    <state x="403" y="81" width="729" height="662" key="find.popup" timestamp="1579603422583">
+    <state x="403" y="81" width="729" height="662" key="find.popup" timestamp="1579856174594">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="403" y="81" width="729" height="662" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1579603422583" />
+    <state x="403" y="81" width="729" height="662" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1579856174594" />
     <state x="341" y="183" key="run.anything.popup" timestamp="1579202361948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

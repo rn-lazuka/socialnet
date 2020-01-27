@@ -6,13 +6,12 @@ import {Textarea} from "../../common/FormsControls/FormsControls";
 import {maxlength, required} from "../../../utils/validators/validators";
 
 
-const MyPosts = (props) => {
-    let postsElements = props.posts.map(p => <Post message={p.message} likeCount={p.likeCount}/>);
+const MyPosts = React.memo((props) => {
+    let postsElements = [...props.posts].map(p => <Post message={p.message} likeCount={p.likeCount}/>).reverse();
 
     let addPost = (values) => {
         props.addPost(values.newMessageText);
     };
-
 
     return (
         <div className={s.postBlock}>
@@ -23,7 +22,7 @@ const MyPosts = (props) => {
             </div>
         </div>
     )
-};
+});
 
 let maxLength200 = maxlength(200);
 

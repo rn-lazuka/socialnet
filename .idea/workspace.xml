@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c68d860a-6e07-4fef-8ef3-cb3537e3bf49" name="Default Changelist" comment="added render.js and renderEntireTree() for redrawing">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/profile-reducer.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profile-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +13,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="kabzda" />
+    <favorites_list name="kabzda">
+      <favorite_root url="file://$PROJECT_DIR$/src/Redux/profile-reducer.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,29 +40,82 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Redux" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\it-kamasutra\kabzda\src\components\Profile\ProfileInfo" />
-      <recent name="C:\it-kamasutra\kabzda\src\Redux" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\common\FormsControls" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\Header" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\Profile" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\it-kamasutra\kabzda\src\components\Profile\MyPosts" />
       <recent name="C:\it-kamasutra\kabzda\src\components\Profile" />
       <recent name="C:\it-kamasutra\kabzda\src\components\Navbar" />
       <recent name="C:\it-kamasutra\kabzda\src\components\Header" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\it-kamasutra\kabzda\src\Redux" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\Profile\ProfileInfo" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\common\FormsControls" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\Header" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\Profile" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Jest.after deleting length of messages should be decrement">
+    <configuration name="after deleting length of messages should be decrement" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/Redux/profile-reducer.test.js" />
+      <test-names>
+        <test-name value="after deleting length of messages should be decrement" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="new post should be added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/Redux/profile-reducer.test.js" />
+      <test-names>
+        <test-name value="new post should be added" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="new post should be correct" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/Redux/profile-reducer.test.js" />
+      <test-names>
+        <test-name value="new post should be correct" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="renders without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="renders without crashing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -72,6 +128,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.after deleting length of messages should be decrement" />
+        <item itemvalue="Jest.new post should be correct" />
+        <item itemvalue="Jest.new post should be added" />
+        <item itemvalue="Jest.renders without crashing" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -149,7 +209,7 @@
       <workItem from="1579984914045" duration="17000" />
       <workItem from="1579984997699" duration="600000" />
       <workItem from="1580121924260" duration="8000" />
-      <workItem from="1580121933948" duration="3063000" />
+      <workItem from="1580121933948" duration="7828000" />
     </task>
     <task id="LOCAL-00001" summary="added props callback">
       <created>1577651757209</created>
@@ -199,22 +259,70 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="772" y="75" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580121930681" />
-    <state width="1509" height="197" key="GridCell.Tab.0.bottom" timestamp="1579883239423">
+    <state width="1509" height="194" key="GridCell.Tab.0.bottom" timestamp="1580133846320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1509" height="197" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579883239423" />
-    <state width="1509" height="197" key="GridCell.Tab.0.center" timestamp="1579883239423">
+    <state width="1509" height="194" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580133846320" />
+    <state width="1509" height="194" key="GridCell.Tab.0.center" timestamp="1580133846320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1509" height="197" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579883239423" />
-    <state width="1509" height="197" key="GridCell.Tab.0.left" timestamp="1579883239422">
+    <state width="1509" height="194" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580133846320" />
+    <state width="1509" height="194" key="GridCell.Tab.0.left" timestamp="1580133846320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1509" height="197" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579883239422" />
-    <state width="1509" height="197" key="GridCell.Tab.0.right" timestamp="1579883239423">
+    <state width="1509" height="194" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580133846320" />
+    <state width="1509" height="194" key="GridCell.Tab.0.right" timestamp="1580133846320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1509" height="197" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579883239423" />
+    <state width="1509" height="194" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580133846320" />
+    <state width="1494" height="245" key="GridCell.Tab.1.bottom" timestamp="1580132986834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1494" height="245" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580132986834" />
+    <state width="1494" height="245" key="GridCell.Tab.1.center" timestamp="1580132986834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1494" height="245" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1580132986834" />
+    <state width="1494" height="245" key="GridCell.Tab.1.left" timestamp="1580132986834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1494" height="245" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1580132986834" />
+    <state width="1494" height="245" key="GridCell.Tab.1.right" timestamp="1580132986834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1494" height="245" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1580132986834" />
+    <state width="1494" height="245" key="GridCell.Tab.2.bottom" timestamp="1580132986834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1494" height="245" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580132986834" />
+    <state width="1494" height="245" key="GridCell.Tab.2.center" timestamp="1580132986834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1494" height="245" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1580132986834" />
+    <state width="1494" height="245" key="GridCell.Tab.2.left" timestamp="1580132986834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1494" height="245" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1580132986834" />
+    <state width="1494" height="245" key="GridCell.Tab.2.right" timestamp="1580132986834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1494" height="245" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1580132986834" />
+    <state width="1494" height="245" key="GridCell.Tab.3.bottom" timestamp="1580132986834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1494" height="245" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580132986834" />
+    <state width="1494" height="245" key="GridCell.Tab.3.center" timestamp="1580132986834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1494" height="245" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1580132986834" />
+    <state width="1494" height="245" key="GridCell.Tab.3.left" timestamp="1580132986834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1494" height="245" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1580132986834" />
+    <state width="1494" height="245" key="GridCell.Tab.3.right" timestamp="1580132986834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1494" height="245" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1580132986834" />
     <state x="597" y="64" key="RollbackChangesDialog" timestamp="1579526407930">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -248,26 +356,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx</url>
-          <line>15</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Redux/store.js</url>
-          <line>17</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Redux/redux-store.js</url>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx</url>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatusWithHooks.jsx</url>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/src/Redux/profile-reducer.test.js</url>
+          <line>12</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

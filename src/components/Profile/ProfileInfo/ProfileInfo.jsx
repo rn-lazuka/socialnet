@@ -5,20 +5,18 @@ import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
 
 
-const ProfileInfo = (props) => {
-    if (!props.profile) {
+const ProfileInfo = ({profile,status,updateUserStatus}) => {
+    if (!profile) {
         return <Preloader/>
     }
     return <div>
-        {/*<div className={s.pic}>*/}
-        {/*</div>*/}
         <div className={s.descriptionBlock}>
-            <img alt={'#'} src={props.profile.photos.large}/>
-            <ProfileStatusWithHooks updateUserStatus={props.updateUserStatus}
-                           status={props.status}/>
-            <div>Имя:{props.profile.fullName}</div>
-            <div>Обо мне:{props.profile.aboutMe}</div>
-            <div>Контакты:<a href={'https://' + props.profile.contacts.vk}>{props.profile.contacts.vk}</a></div>
+            <img alt={'#'} src={profile.photos.large}/>
+            <ProfileStatusWithHooks updateUserStatus={updateUserStatus}
+                           status={status}/>
+            <div>Имя:{profile.fullName}</div>
+            <div>Обо мне:{profile.aboutMe}</div>
+            <div>Контакты:<a href={'https://' + profile.contacts.vk}>{profile.contacts.vk}</a></div>
 
         </div>
 

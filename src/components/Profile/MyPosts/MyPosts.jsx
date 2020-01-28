@@ -16,7 +16,9 @@ const MyPosts = React.memo((props) => {
     return (
         <div className={s.postBlock}>
             <h3> My posts </h3>
-            <AddProfilePostFormRedux onSubmit={addPost}/>
+            {props.isAuth&&
+                <AddProfilePostFormRedux onSubmit={addPost}/>
+            }
             <div className={s.posts}>
                 {postsElements}
             </div>

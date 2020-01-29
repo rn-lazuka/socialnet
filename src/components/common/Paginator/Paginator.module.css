@@ -1,3 +1,12 @@
 .selectedPage{
     font-weight: bolder;
 }
+
+.paginator{
+padding: 15px;
+}
+
+.page{
+    padding: 0 5px;
+    border: solid 1px
+}

@@ -1,10 +1,11 @@
 import {connect} from "react-redux";
-import {follow, unfollow, requestUsers} from "../../Redux/users-reducer";
+import {follow, unfollow, requestUsers, getPagePortion} from "../../Redux/users-reducer";
 import Users from "./Users";
 import React from "react";
 import Preloader from "../common/Preloader/Preloader";
 import {compose} from "redux";
 import {
+    getCurPortionNumber,
     getCurrentPage,
     getFollowingInProgress, getIsAuth,
     getIsFetching,
@@ -20,10 +21,12 @@ class UsersContainer extends React.Component {
         this.props.requestUsers(currentPage, pageSize)
     }
 
-    onPageChanged = (pageNumber) => {
+    onPageChanged = (pageNumber,curPortionNumber) => {
         const {pageSize}=this.props;
-        this.props.requestUsers(pageNumber,pageSize)
+        this.props.requestUsers(pageNumber,pageSize);
+        this.props.getPagePortion(curPortionNumber);
     };
+
 
     render() {
         return <>
@@ -38,6 +41,7 @@ class UsersContainer extends React.Component {
                        unfollow={this.props.unfollow}
                        followingInProgress={this.props.followingInProgress}
                        isAuth={this.props.isAuth}
+                       curPortionNumber={this.props.curPortionNumber}
                 />}
         </>
     }
@@ -51,9 +55,10 @@ let mapStateToProps = (state) => {
         pageSize: getPageSize(state),
         currentPage: getCurrentPage(state),
         isFetching: getIsFetching(state),
-        followingInProgress: getFollowingInProgress(state)
+        followingInProgress: getFollowingInProgress(state),
+        curPortionNumber: getCurPortionNumber(state)
     }
 
 };
 
-export default compose(connect(mapStateToProps, {follow, unfollow,requestUsers}))(UsersContainer)
+export default compose(connect(mapStateToProps, {follow, unfollow,requestUsers,getPagePortion}))(UsersContainer)

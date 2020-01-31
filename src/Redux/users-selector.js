@@ -6,7 +6,7 @@ const getUsersSelector =(state) => {
 
 
 export const getUsers = createSelector(getUsersSelector, (users) => {
-    return users.filter(u=>true);
+    return users.filter(()=>true);
 });
 
 export const getTotalUsersCount =(state) => {
@@ -23,6 +23,9 @@ export const getIsFetching =(state) => {
 };
 export const getFollowingInProgress =(state) => {
     return state.usersPage.followingInProgress;
+};
+export const getCurPortionNumber =(state) => {
+    return state.usersPage.curPortionNumber;
 };
 export const getIsAuth =(state) => {
     return state.auth.isAuth;

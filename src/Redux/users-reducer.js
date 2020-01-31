@@ -8,6 +8,7 @@ const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
 const SET_TOTAL_USERS_COUNT = 'SET_TOTAL_USERS_COUNT';
 const TOGGLE_IS_FETCHING = 'TOGGLE_IS_FETCHING';
 const TOGGLE_IS_FOLLOWING_PROGRESS = 'TOGGLE_IS_FOLLOWING_PROGRESS';
+const SET_PORTION_PAGE = 'SET_PORTION_PAGE';
 
 let initialState = {
     users: [],
@@ -15,7 +16,8 @@ let initialState = {
     totalUsersCount: 0,
     currentPage: 1,
     isFetching: true,
-    followingInProgress: []
+    followingInProgress: [],
+    curPortionNumber:1
 };
 
 const usersReducer = (state = initialState, action) => {
@@ -65,8 +67,12 @@ const usersReducer = (state = initialState, action) => {
                     state.followingInProgress.filter(id => id !== action.userId)
             };
         }
+        case
+        SET_PORTION_PAGE:
+            return {...state, curPortionNumber: action.curPortionNumber};
         default:
             return state;
+
     }
 };
 
@@ -77,6 +83,7 @@ export const unfollowSuccess = (userId) => ({type: UNFOLLOW, userId});
 export const setUsers = (users) => ({type: SET_USERS, users});
 export const setTotalUsersCount = (totalCount) => ({type: SET_TOTAL_USERS_COUNT, totalCount});
 export const toggleIsFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching});
+export const setCurrentPagePortion = (curPortionNumber) => ({type: SET_PORTION_PAGE, curPortionNumber});
 export const toggleIsFollowingProgress = (isFetching, userId) => ({
     type: TOGGLE_IS_FOLLOWING_PROGRESS,
     isFetching,
@@ -91,6 +98,11 @@ export const requestUsers = (currentPage, pageSize) => {
         dispatch(toggleIsFetching(false));
         dispatch(setUsers(response.data.items));
         dispatch(setTotalUsersCount(response.data.totalCount));
+    }
+};
+export const getPagePortion = (curPortionNumber) => {
+    return (dispatch) => {
+        dispatch(setCurrentPagePortion(curPortionNumber));
     }
 };
 

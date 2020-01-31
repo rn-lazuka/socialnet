@@ -6,15 +6,15 @@ import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import Friends from "./components/Sidebar/Sidebar";
-import UsersContainer from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import Login from "./components/Login/Login";
-import Dialogs from "./components/Dialogs/DialogsContainer";
 import {connect} from "react-redux";
 import {compose} from "redux";
 import Preloader from "./components/common/Preloader/Preloader";
 import {initializeApp} from "./Redux/app-reducer";
+const UsersContainer = React.lazy(() => import("./components/Users/UsersContainer"));
+const Dialogs = React.lazy(() => import("./components/Dialogs/DialogsContainer"));
 
 
 class App extends React.Component {
@@ -31,6 +31,7 @@ class App extends React.Component {
                 <HeaderContainer/>
                 <Navbar/>
                 <div className='app-wrapper-content'>
+                    <React.Suspense fallback={<Preloader/>}>
                     <Route path='/dialogs' render={() => <Dialogs/>}/>
                     <Route path='/profile/:userId?' render={() => <ProfileContainer/>}/>
                     <Route path='/news' component={News}/>
@@ -39,6 +40,7 @@ class App extends React.Component {
                     <Route path='/settings' component={Settings}/>
                     <Route path='/friends' component={Friends}/>
                     <Route path='/login' component={Login}/>
+                    </React.Suspense>
                 </div>
 
             </div>

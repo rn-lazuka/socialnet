@@ -1,18 +1,28 @@
 .content img {
     width: 1200px;
 }
+
 .pic {
-    height: 200px ;
+    height: 200px;
     width: 100%;
     background-image: url("https://www.pond5.com/images/images_db/vlp/image-hero-poster.jpg");
-background-position: center;
-
+    background-position: center;
 }
+
 .descriptionBlock {
     padding: 10px;
-
 }
+
 .descriptionBlock img {
     height: 400px;
     width: 500px;
+}
+
+.mainPhoto {
+    max-width: 220px;
+    max-height: 260px;
+}
+
+.contact {
+    padding-left: 10px;
 }

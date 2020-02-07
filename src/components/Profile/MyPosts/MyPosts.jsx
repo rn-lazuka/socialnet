@@ -7,7 +7,7 @@ import {maxlength, required} from "../../../utils/validators/validators";
 
 
 const MyPosts = React.memo((props) => {
-    let postsElements = [...props.posts].map(p => <Post message={p.message} likeCount={p.likeCount}/>).reverse();
+    let postsElements = [...props.posts].map(p => <Post key={p.id} message={p.message} likeCount={p.likeCount}/>).reverse();
 
     let addPost = (values) => {
         props.addPost(values.newMessageText);

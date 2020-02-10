@@ -4,6 +4,7 @@ import Preloader from "../../common/Preloader/Preloader";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 import userPhoto from "../../../assets/images/user.png"
 import ProfileDataForm from "./ProfileDataForm";
+import UploadButton from "../../common/PhotoUpload/UploadButton";
 
 
 const ProfileInfo = ({profile, status, updateUserStatus, isOwner, savePhoto, saveProfile}) => {
@@ -28,8 +29,12 @@ const ProfileInfo = ({profile, status, updateUserStatus, isOwner, savePhoto, sav
     return <div>
         <div className={s.descriptionBlock}>
             <img alt={'#'} src={profile.photos.large || userPhoto} className={s.mainPhoto}/>
-            {isOwner && <input type={'file'} onChange={onMainPhotoSelected}/>}
+            {isOwner &&
+                <UploadButton onChange={onMainPhotoSelected}/>
+            // <input type={'file'} onChange={onMainPhotoSelected}/>
+            }
             <ProfileStatusWithHooks updateUserStatus={updateUserStatus}
+                                    isOwner={isOwner}
                                     status={status}/>
 
             {editMode ? <ProfileDataForm   profile={profile}  onSubmit={onSubmit} initialValues={profile}/> : <ProfileData profile={profile} goToEditMode={ ()=>{setEditMode(true)}} isOwner={isOwner}/>}

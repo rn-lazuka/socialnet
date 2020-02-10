@@ -1,35 +1,42 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 
 
-const ProfileStatusWithHooks  =(props)=>{
+const ProfileStatusWithHooks = (props) => {
+    let [editMode, setEditMode] = useState(false);
+    let [status, setStatus] = useState(props.status);
 
- let [editMode,setEditMode] = useState(false);
- let [status,setStatus] = useState(props.status);
+    useEffect(() => {
+        setStatus(props.status)
+    }, [props.status]);
 
- useEffect (()=>{setStatus(props.status)},[props.status]);
-
- let activateEditMode=()=>{
-     setEditMode(true)
- };
- let onStatusChanged=(e)=>{
-     setStatus(e.currentTarget.value);
- };
- let deActivateEditMode=()=>{
-     props.updateUserStatus(status);
-     setEditMode(false)
- };
-        return (
-            <div>
-                {!editMode ?
+    let activateEditMode = () => {
+        setEditMode(true)
+    };
+    let onStatusChanged = (e) => {
+        setStatus(e.currentTarget.value);
+    };
+    let deActivateEditMode = () => {
+        props.updateUserStatus(status);
+        setEditMode(false)
+    };
+    return (
+        <div>
+            {props.isOwner ?
+                !editMode ?
                     <div>
-                       <b>Status:</b> <span onDoubleClick={activateEditMode}>{status || "No status"}</span>
+                        <b>Status:</b> <span onDoubleClick={activateEditMode}>{status || "No status"}</span>
                     </div>
                     :
                     <div>
-                        <input onChange={onStatusChanged} onBlur={deActivateEditMode} autoFocus={true} value={status}/>
+                        <input onChange={onStatusChanged} onBlur={deActivateEditMode} autoFocus={true}
+                               value={status}/>
                     </div>
-                }
-            </div>
-        )
+                :
+                <div>
+                    <b>Status:</b> <span>{status || "No status"}</span>
+                </div>
+            }
+        </div>
+    )
 };
 export default ProfileStatusWithHooks;

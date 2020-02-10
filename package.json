@@ -5,6 +5,7 @@
   "homepage": "https://rn-lazuka.github.io/socialnet",
   "dependencies": {
     "axios": "^0.19.1",
+    "classnames": "^2.2.6",
     "gh-pages": "^2.2.0",
     "i": "^0.3.6",
     "react": "^16.12.0",

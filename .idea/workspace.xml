@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c68d860a-6e07-4fef-8ef3-cb3537e3bf49" name="Default Changelist" comment="">
+    <list default="true" id="c68d860a-6e07-4fef-8ef3-cb3537e3bf49" name="Default Changelist" comment="Added captcha for Login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/auth-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profile-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +226,8 @@
       <workItem from="1580990549853" duration="15000" />
       <workItem from="1580990626412" duration="12429000" />
       <workItem from="1581063479191" duration="15086000" />
-      <workItem from="1581161355771" duration="6121000" />
+      <workItem from="1581161355771" duration="9512000" />
+      <workItem from="1581238356361" duration="5631000" />
     </task>
     <task id="LOCAL-00001" summary="added props callback">
       <created>1577651757209</created>
@@ -261,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581090174127</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added captcha for Login">
+      <created>1581170837759</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581170837759</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +297,8 @@
     <MESSAGE value="modificate for Paginator" />
     <MESSAGE value="added React.lazy and React.Suspense" />
     <MESSAGE value="Profile update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Profile update" />
+    <MESSAGE value="Added captcha for Login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added captcha for Login" />
   </component>
   <component name="WindowStateProjectService">
     <state x="449" y="132" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579951593308">
@@ -298,30 +309,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="436" y="95" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578931572041" />
-    <state x="336" y="0" key="CommitChangelistDialog2" timestamp="1581090172205">
+    <state x="336" y="0" key="CommitChangelistDialog2" timestamp="1581333400535">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="336" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581090172205" />
+    <state x="336" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581333400535" />
     <state x="772" y="75" key="FileChooserDialogImpl" timestamp="1580990563657">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="772" y="75" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580990563657" />
-    <state width="1509" height="193" key="GridCell.Tab.0.bottom" timestamp="1581162069707">
+    <state width="1509" height="193" key="GridCell.Tab.0.bottom" timestamp="1581186285897">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1509" height="193" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581162069707" />
-    <state width="1509" height="193" key="GridCell.Tab.0.center" timestamp="1581162069707">
+    <state width="1509" height="193" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581186285897" />
+    <state width="1509" height="193" key="GridCell.Tab.0.center" timestamp="1581186285897">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1509" height="193" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581162069707" />
-    <state width="1509" height="193" key="GridCell.Tab.0.left" timestamp="1581162069707">
+    <state width="1509" height="193" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581186285897" />
+    <state width="1509" height="193" key="GridCell.Tab.0.left" timestamp="1581186285897">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1509" height="193" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581162069707" />
-    <state width="1509" height="193" key="GridCell.Tab.0.right" timestamp="1581162069707">
+    <state width="1509" height="193" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581186285897" />
+    <state width="1509" height="193" key="GridCell.Tab.0.right" timestamp="1581186285897">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1509" height="193" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581162069707" />
+    <state width="1509" height="193" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581186285897" />
     <state width="1494" height="245" key="GridCell.Tab.1.bottom" timestamp="1580145059348">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -378,26 +389,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="323" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581090083407" />
-    <state x="261" y="79" key="Vcs.Push.Dialog.v2" timestamp="1581090177498">
+    <state x="261" y="79" key="Vcs.Push.Dialog.v2" timestamp="1581170839878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="261" y="79" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581090177498" />
+    <state x="261" y="79" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581170839878" />
     <state x="410" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581165512331">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1581165512331" />
-    <state x="403" y="81" width="729" height="662" key="find.popup" timestamp="1581087976613">
+    <state x="403" y="81" width="729" height="662" key="find.popup" timestamp="1581342126268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="403" y="81" width="729" height="662" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1581087976613" />
+    <state x="403" y="81" width="729" height="662" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1581342126268" />
     <state x="341" y="183" key="run.anything.popup" timestamp="1579202361948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="341" y="183" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1579202361948" />
-    <state x="670" y="0" width="840" height="822" key="search.everywhere.popup" timestamp="1581163642464">
+    <state x="670" y="0" width="840" height="822" key="search.everywhere.popup" timestamp="1581172037150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="670" y="0" width="840" height="822" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1581163642464" />
+    <state x="670" y="0" width="840" height="822" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1581172037150" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

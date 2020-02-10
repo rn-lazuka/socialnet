@@ -61,7 +61,7 @@ const ProfileData = ({profile,isOwner,goToEditMode}) => {
 };
 
 const Contact = ({contactTitle, contactValue}) => {
-    return <div className={s.contact}><b>{contactTitle}:</b> <a href={contactValue}> {contactValue}</a></div>
+    return <div className={s.contact}><b>{contactTitle}:</b> <a target={'_blank'} href={contactValue}> {contactValue}</a></div>
 };
 
 export default ProfileInfo

@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/socialnet/static/css/main.833375a1.chunk.css",
-    "main.js": "/socialnet/static/js/main.4ed36b10.chunk.js",
-    "main.js.map": "/socialnet/static/js/main.4ed36b10.chunk.js.map",
-    "runtime-main.js": "/socialnet/static/js/runtime-main.3f40ca5b.js",
-    "runtime-main.js.map": "/socialnet/static/js/runtime-main.3f40ca5b.js.map",
+    "main.js": "/socialnet/static/js/main.601fc1a6.chunk.js",
+    "main.js.map": "/socialnet/static/js/main.601fc1a6.chunk.js.map",
+    "runtime-main.js": "/socialnet/static/js/runtime-main.db8102f9.js",
+    "runtime-main.js.map": "/socialnet/static/js/runtime-main.db8102f9.js.map",
     "static/js/2.85daa53d.chunk.js": "/socialnet/static/js/2.85daa53d.chunk.js",
     "static/js/2.85daa53d.chunk.js.map": "/socialnet/static/js/2.85daa53d.chunk.js.map",
     "static/css/3.0a551963.chunk.css": "/socialnet/static/css/3.0a551963.chunk.css",
     "static/js/3.bd1d403a.chunk.js": "/socialnet/static/js/3.bd1d403a.chunk.js",
     "static/js/3.bd1d403a.chunk.js.map": "/socialnet/static/js/3.bd1d403a.chunk.js.map",
     "static/css/4.86807a88.chunk.css": "/socialnet/static/css/4.86807a88.chunk.css",
-    "static/js/4.4f063d19.chunk.js": "/socialnet/static/js/4.4f063d19.chunk.js",
-    "static/js/4.4f063d19.chunk.js.map": "/socialnet/static/js/4.4f063d19.chunk.js.map",
+    "static/js/4.8741faaf.chunk.js": "/socialnet/static/js/4.8741faaf.chunk.js",
+    "static/js/4.8741faaf.chunk.js.map": "/socialnet/static/js/4.8741faaf.chunk.js.map",
     "index.html": "/socialnet/index.html",
-    "precache-manifest.e6fb6363878095e35bbc9620336e8730.js": "/socialnet/precache-manifest.e6fb6363878095e35bbc9620336e8730.js",
+    "precache-manifest.acea9450e355643cb8a70e3239541cce.js": "/socialnet/precache-manifest.acea9450e355643cb8a70e3239541cce.js",
     "service-worker.js": "/socialnet/service-worker.js",
     "static/css/3.0a551963.chunk.css.map": "/socialnet/static/css/3.0a551963.chunk.css.map",
     "static/css/4.86807a88.chunk.css.map": "/socialnet/static/css/4.86807a88.chunk.css.map",
@@ -22,9 +22,9 @@
     "static/media/loading.svg": "/socialnet/static/media/loading.dec3ae46.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3f40ca5b.js",
+    "static/js/runtime-main.db8102f9.js",
     "static/js/2.85daa53d.chunk.js",
     "static/css/main.833375a1.chunk.css",
-    "static/js/main.4ed36b10.chunk.js"
+    "static/js/main.601fc1a6.chunk.js"
   ]
 }

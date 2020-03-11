@@ -77,14 +77,14 @@ const usersReducer = (state = initialState, action) => {
 };
 
 
-export const setCurrentPage = (p) => ({type: SET_CURRENT_PAGE, p});
-export const followSuccess = (userId) => ({type: FOLLOW, userId});
-export const unfollowSuccess = (userId) => ({type: UNFOLLOW, userId});
-export const setUsers = (users) => ({type: SET_USERS, users});
-export const setTotalUsersCount = (totalCount) => ({type: SET_TOTAL_USERS_COUNT, totalCount});
-export const toggleIsFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching});
-export const setCurrentPagePortion = (curPortionNumber) => ({type: SET_PORTION_PAGE, curPortionNumber});
-export const toggleIsFollowingProgress = (isFetching, userId) => ({
+const setCurrentPage = (p) => ({type: SET_CURRENT_PAGE, p});
+const followSuccess = (userId) => ({type: FOLLOW, userId});
+const unfollowSuccess = (userId) => ({type: UNFOLLOW, userId});
+const setUsers = (users) => ({type: SET_USERS, users});
+const setTotalUsersCount = (totalCount) => ({type: SET_TOTAL_USERS_COUNT, totalCount});
+const toggleIsFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching});
+const setCurrentPagePortion = (curPortionNumber) => ({type: SET_PORTION_PAGE, curPortionNumber});
+const toggleIsFollowingProgress = (isFetching, userId) => ({
     type: TOGGLE_IS_FOLLOWING_PROGRESS,
     isFetching,
     userId

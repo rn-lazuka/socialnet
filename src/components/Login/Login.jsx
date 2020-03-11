@@ -7,7 +7,7 @@ import {login} from "../../Redux/auth-reducer";
 import {Redirect} from "react-router-dom";
 import s from '../common/FormsControls/FormsControls.module.css'
 
-let maxLength = maxlength(20);
+let maxLength = maxlength(40);
 const LoginForm = ({handleSubmit, error, captchaUrl}) => {
     return (
         <form onSubmit={handleSubmit}>

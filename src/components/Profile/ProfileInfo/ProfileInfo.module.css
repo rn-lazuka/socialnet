@@ -13,9 +13,11 @@
     width: 220px;
     height: 260px;
 }
+
 .status {
     grid-area: status;
 }
+
 .description {
     grid-area: description;
 }

@@ -7,13 +7,13 @@ type PropsType ={
     totalUsersCount:number
     pageSize:number
     currentPage:number
-    onPageChanged:(p:number,portionNumber:number)=>void
     curPortionNumber:number
+    isAuth:boolean
     users:Array<UserType>
-    isAuth:()=>void
-    followingInProgress:()=>void
-    unfollow:()=>void
-    follow:()=>void
+    followingInProgress:Array<number>
+    unfollow:(userId:number)=>void
+    follow:(userId:number)=>void
+    onPageChanged:(p:number,portionNumber:number)=>void
 }
 let Users:FC <PropsType>= (props) => {
 

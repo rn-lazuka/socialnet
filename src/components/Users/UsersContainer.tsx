@@ -13,17 +13,36 @@ import {
     getTotalUsersCount,
     getUsers
 } from "../../Redux/users-selector";
+import {UserType} from "../../types/types";
+import {AppStateType} from "../../Redux/redux-store";
 
+type MapStatePropsType = {
+    currentPage: number
+    pageSize: number
+    isFetching: boolean
+    totalUsersCount: number
+    curPortionNumber: number
+    users: Array<UserType>
+    isAuth: boolean
+    followingInProgress: Array<number>
+}
+type MapDispatchPropsType = {
+    follow: (userId:number) => void
+    unfollow: (userId:number) => void
+    requestUsers: (currentPage: number, pageSize: number) => void
+    getPagePortion: (curPortionNumber: number) => void
+}
+type PropsType = MapStatePropsType & MapDispatchPropsType
 
-class UsersContainer extends React.Component {
+class UsersContainer extends React.Component<PropsType> {
     componentDidMount() {
-        const {currentPage,pageSize}=this.props;
+        const {currentPage, pageSize} = this.props;
         this.props.requestUsers(currentPage, pageSize)
     }
 
-    onPageChanged = (pageNumber,curPortionNumber) => {
-        const {pageSize}=this.props;
-        this.props.requestUsers(pageNumber,pageSize);
+    onPageChanged = (pageNumber: number, curPortionNumber: number) => {
+        const {pageSize} = this.props;
+        this.props.requestUsers(pageNumber, pageSize);
         this.props.getPagePortion(curPortionNumber);
     };
 
@@ -47,7 +66,7 @@ class UsersContainer extends React.Component {
     }
 }
 
-let mapStateToProps = (state) => {
+let mapStateToProps = (state: AppStateType): MapStatePropsType => {
     return {
         isAuth: getIsAuth(state),
         users: getUsers(state),
@@ -57,8 +76,9 @@ let mapStateToProps = (state) => {
         isFetching: getIsFetching(state),
         followingInProgress: getFollowingInProgress(state),
         curPortionNumber: getCurPortionNumber(state)
+
     }
 
 };
-
-export default compose(connect(mapStateToProps, {follow, unfollow,requestUsers,getPagePortion}))(UsersContainer)
+//<TStateProps = {}, TDispatchProps = {}, TOwnProps = {}, State = DefaultRootState>
+export default compose(connect<MapStatePropsType,MapDispatchPropsType,{},AppStateType>(mapStateToProps, {follow, unfollow, requestUsers, getPagePortion}))(UsersContainer)

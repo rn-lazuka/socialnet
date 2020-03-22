@@ -1,10 +1,13 @@
 import {AuthAPI, SecurityAPI} from "../api/api";
 import {stopSubmit} from "redux-form"
+import {Dispatch} from "redux";
+import {AppStateType} from "./redux-store";
+import {ThunkAction} from "redux-thunk";
 
 const SET_USER_DATA = 'samurai-network/auth/SET_USER_DATA';
 const GET_CAPTCHA_URL_SUCCESS = 'samurai-network/auth/GET_CAPTCHA_URL_SUCCESS';
 
-type initialStateType = {
+type InitialStateType = {
     userId: number | null,
     email: string | null,
     login: string | null,
@@ -13,7 +16,7 @@ type initialStateType = {
 };
 
 
-let initialState: initialStateType = {
+let initialState: InitialStateType = {
     userId: null,
     email: null,
     login: null,
@@ -21,7 +24,7 @@ let initialState: initialStateType = {
     captchaUrl: null // if null , then captcha is not required
 };
 
-const authReducer = (state = initialState, action: any): initialStateType => {
+const authReducer = (state = initialState, action: AuthActionType): InitialStateType => {
     switch (action.type) {
         case SET_USER_DATA:
         case GET_CAPTCHA_URL_SUCCESS:
@@ -33,40 +36,44 @@ const authReducer = (state = initialState, action: any): initialStateType => {
             return state;
     }
 };
-
-type getCaptchaUrlSuccessActionType = {
+type AuthActionType = GetCaptchaUrlSuccessActionType|SetAuthUserDataActionType
+type GetCaptchaUrlSuccessActionType = {
     type: typeof GET_CAPTCHA_URL_SUCCESS
     payload: { captchaUrl: string }
 }
-type payloadActionType = {
+type PayloadType = {
     userId: number|null,
     email: string|null,
     login: string|null,
     isAuth: boolean
 }
-type setAuthUserDataActionType = {
+type SetAuthUserDataActionType = {
     type: typeof SET_USER_DATA
-    payload: payloadActionType
+    payload: PayloadType
 }
 
-const getCaptchaUrlSuccess = (captchaUrl: string): getCaptchaUrlSuccessActionType => ({
+const getCaptchaUrlSuccess = (captchaUrl: string): GetCaptchaUrlSuccessActionType => ({
     type: GET_CAPTCHA_URL_SUCCESS,
     payload: {captchaUrl}
 });
-const setAuthUserData = (userId: number|null, email: string|null, login: string|null, isAuth: boolean): setAuthUserDataActionType => ({
+const setAuthUserData = (userId: number|null, email: string|null, login: string|null, isAuth: boolean): SetAuthUserDataActionType => ({
     type: SET_USER_DATA,
     payload: {userId, email, login, isAuth}
 });
 
+type DispatchType = Dispatch<AuthActionType>
+type GetStateType = ()=>AppStateType
+type ThunkType<P> = ThunkAction<P,AppStateType,unknown,AuthActionType>
 
-export const getAuthUserData = () => async (dispatch:any) => {
+export const getAuthUserData = ():ThunkType<Promise<void>> => async (dispatch) => {
     let response = await AuthAPI.authMe();
     if (response.data.resultCode === 0) {
         let {id, email, login} = response.data.data;
         dispatch(setAuthUserData(id, email, login, true));
     }
 };
-export const login = (email:string, password:string, rememberMe:boolean, captcha:string) => async (dispatch:any) => {
+// need to fix login dispatch type
+export const login = (email:string, password:string, rememberMe:boolean, captcha:string):ThunkType<Promise<void>>  => async (dispatch:any) => {
     let response = await AuthAPI.login(email, password, rememberMe, captcha);
     if (response.data.resultCode === 0) {
         //success, get auth data
@@ -79,13 +86,13 @@ export const login = (email:string, password:string, rememberMe:boolean, captcha
         dispatch(stopSubmit("login", {_error: message}))
     }
 };
-export const logout = () => async (dispatch:any) => {
+export const logout = ():ThunkType<Promise<void>> => async (dispatch) => {
     let response = await AuthAPI.logout();
     if (response.data.resultCode === 0) {
         dispatch(setAuthUserData(null, null, null, false))
     }
 };
-export const getCaptchaUrl = () => async (dispatch:any) => {
+export const getCaptchaUrl = ():ThunkType<Promise<void>> => async (dispatch) => {
     const response = await SecurityAPI.getCaptchaUrl();
     const captchaUrl = response.data.url;
     dispatch(getCaptchaUrlSuccess(captchaUrl))

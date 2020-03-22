@@ -31,8 +31,8 @@ type initializedSuccessActionType = {
     type: typeof INITIALIZED_SUCCESS
 }
 export const initializedSuccess = (): initializedSuccessActionType => ({type: INITIALIZED_SUCCESS});
-
-export const initializeApp = (): ThunkAction<Promise<void>, AppStateType, unknown, AppActionTypes> => (dispatch,getState) => {
+type ThunkType= ThunkAction<void, AppStateType, unknown, AppActionTypes>
+export const initializeApp = ():ThunkType => (dispatch,getState) => {
     let promise = dispatch(getAuthUserData());
     Promise.all([promise])
         .then(() => {

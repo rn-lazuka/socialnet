@@ -28,7 +28,7 @@ let initialState= { dialogs: [
 
 type initialStateType = typeof initialState;
 
-const dialogsReducer = (state= initialState, action:any):initialStateType => {
+const dialogsReducer = (state= initialState, action:DialogsActionType):initialStateType => {
     switch (action.type) {
         case ADD_DIALOG_POST: {
             let newPost = {
@@ -40,10 +40,11 @@ const dialogsReducer = (state= initialState, action:any):initialStateType => {
         default: return state
     }
 };
-type addDialogPostActionCreatorActionType={
+type DialogsActionType =AddDialogPostActionCreatorActionType
+type AddDialogPostActionCreatorActionType={
     type:typeof ADD_DIALOG_POST
     message:string
 }
-export const addDialogPostActionCreator = (message:string):addDialogPostActionCreatorActionType => ({type: ADD_DIALOG_POST,message});
+export const addDialogPostActionCreator = (message:string):AddDialogPostActionCreatorActionType => ({type: ADD_DIALOG_POST,message});
 
 export default dialogsReducer;

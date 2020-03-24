@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {FC} from 'react';
 import s from './Header.module.css';
 import {NavLink, Redirect} from "react-router-dom";
 
 
+type PropsType = {
+    isAuth:boolean
+    login:string|null
+    logout:()=>void
+}
 
-const Header = (props) => {
+const Header:FC<PropsType> = (props) => {
 
     return <header className={s.header}>
         <img alt="logo" src='https://www.vetter.fi/wp-content/uploads/2019/05/logo-ex-3.png'/>

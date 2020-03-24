@@ -16,15 +16,20 @@ type OnUnfollowClickResponseType = {
     messages:Array<string>
     data: {}
 }
+type GetUsersResponseType={
+    items:Array<UserType>
+    totalCount: number
+     error: string
+}
 export const UsersAPI = {
     getUsers(currentPage:number, pageSize:number) {
-        return instance.get<UserType>(`users?page=${currentPage}&count=${pageSize}`)
+        return instance.get<GetUsersResponseType>(`users?page=${currentPage}&count=${pageSize}`).then(res=>res.data)
     },
     onFollowClick(id:number) {
-        return instance.post<OnFollowClickResponseType>(`follow/${id}`)
+        return instance.post<OnFollowClickResponseType>(`follow/${id}`).then(res=>res.data)
     },
     onUnFollowClick(id:number) {
-        return instance.delete<OnUnfollowClickResponseType>(`follow/${id}`)
+        return instance.delete<OnUnfollowClickResponseType>(`follow/${id}`).then(res=>res.data)
     }
 };
 export enum ResultCodeEnum {
@@ -93,7 +98,7 @@ type SavePhotoResponseType = {
     }
 }
 export const ProfileAPI = {
-    getProfile(userId:number) {
+    getProfile(userId:number|null) {
         return instance.get<GetProfileResponseType>(`profile/${userId}`)
     },
     getStatus(userId:number) {
@@ -116,8 +121,11 @@ export const ProfileAPI = {
         return instance.put<SaveProfileResponseType>(`profile`, profile)
     }
 };
+type GetCaptchaUrlResponseType={
+    url:string
+}
 export const SecurityAPI = {
     getCaptchaUrl() {
-        return instance.get(`security/get-captcha-url`)
+        return instance.get<GetCaptchaUrlResponseType>(`security/get-captcha-url`)
     }
 };

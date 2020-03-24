@@ -137,10 +137,10 @@ export const requestUsers = (currentPage:number, pageSize:number):ThunkType<Prom
     return async (dispatch) => {
         dispatch(toggleIsFetching(true));
         dispatch(setCurrentPage(currentPage));
-        let response = await UsersAPI.getUsers(currentPage, pageSize);
+        let usersData = await UsersAPI.getUsers(currentPage, pageSize);
         dispatch(toggleIsFetching(false));
-        dispatch(setUsers(response.data.items));
-        dispatch(setTotalUsersCount(response.data.totalCount));
+        dispatch(setUsers(usersData.items));
+        dispatch(setTotalUsersCount(usersData.totalCount));
     }
 };
 export const getPagePortion = (curPortionNumber:number):ThunkType<void> => {

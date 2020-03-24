@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="c68d860a-6e07-4fef-8ef3-cb3537e3bf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/auth-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/users-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Music/Music.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Music/Music.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/News/News.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/News.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Settings/Settings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Settings/Settings.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Friends/Friend.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Friends/Friend.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +272,8 @@
       <workItem from="1584718031605" duration="3620000" />
       <workItem from="1584784444811" duration="600000" />
       <workItem from="1584888432676" duration="7949000" />
-      <workItem from="1584984256341" duration="6212000" />
+      <workItem from="1584984256341" duration="7101000" />
+      <workItem from="1585070563829" duration="3691000" />
     </task>
     <task id="LOCAL-00001" summary="added props callback">
       <created>1577651757209</created>
@@ -392,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584904248916</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="changed api on typescript format">
+      <created>1584997065963</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1584997065963</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +448,8 @@
     <MESSAGE value="changed ProfileStatus &amp; ProfileStatusWithHooks &amp; User on typescript format" />
     <MESSAGE value="changed app-reducer.ts  (action &amp; thunk types)" />
     <MESSAGE value="fixed all reducers action &amp; dispatch/getState types" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed all reducers action &amp; dispatch/getState types" />
+    <MESSAGE value="changed api on typescript format" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed api on typescript format" />
   </component>
   <component name="WindowStateProjectService">
     <state x="449" y="132" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579951593308">
@@ -443,10 +460,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="436" y="95" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578931572041" />
-    <state x="381" y="0" key="CommitChangelistDialog2" timestamp="1584904248257">
+    <state x="381" y="0" key="CommitChangelistDialog2" timestamp="1584997065227">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="381" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584904248257" />
+    <state x="381" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584997065227" />
     <state x="772" y="75" key="FileChooserDialogImpl" timestamp="1584736317228">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -523,14 +540,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="323" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581090083407" />
-    <state x="261" y="79" width="1014" height="672" key="Vcs.Push.Dialog.v2" timestamp="1584904252234">
+    <state x="261" y="79" width="1014" height="672" key="Vcs.Push.Dialog.v2" timestamp="1584997069154">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="261" y="79" width="1014" height="672" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584904252234" />
-    <state x="410" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584996519920">
+    <state x="261" y="79" width="1014" height="672" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584997069154" />
+    <state x="410" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585082628002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="410" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1584996519920" />
+    <state x="410" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1585082628002" />
     <state x="403" y="81" width="729" height="662" key="find.popup" timestamp="1581772801956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

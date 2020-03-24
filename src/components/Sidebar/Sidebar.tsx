@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {FC} from 'react';
 import s from './Sidebar.module.css';
 import Friend from "./Friends/Friend";
 
+type PropsType = {
 
-const Friends = (props) => {
+}
+const Friends:FC<PropsType> = (props) => {
     return (
         <div>
             <div>

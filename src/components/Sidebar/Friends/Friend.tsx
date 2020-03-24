@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {FC} from 'react';
 import s from './Friend.module.css';
 
+type PropsType = {
 
-const Friend = (props) => {
+}
+const Friend:FC<PropsType> = (props) => {
     return (
             <div className={s.friend}>
                 <div>

@@ -1,6 +1,6 @@
 import {ProfileAPI} from "../api/api";
 import {stopSubmit} from "redux-form";
-import {MessagesType, PhotosType, ProfileType} from "../types/types";
+import {ProfileMessagesType, PhotosType, ProfileType} from "../types/types";
 import {ThunkAction} from "redux-thunk";
 import {AppStateType} from "./redux-store";
 import {Dispatch} from "redux";
@@ -19,7 +19,7 @@ let initialState = {
         {id: 2, message: 'Great, we can go next step!', likeCount: 17},
         {id: 3, message: 'Кто не работает, тот ест.', likeCount: 0},
         {id: 4, message: 'Жить хорошо, а хорошо жить ещё лучше!', likeCount: 666}
-    ]as Array<MessagesType>,
+    ]as Array<ProfileMessagesType>,
     profile: null as ProfileType | null,
     status: ""
 };

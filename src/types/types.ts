@@ -1,4 +1,4 @@
-export type MessagesType = {
+export type ProfileMessagesType = {
     id: number
     message: string
     likeCount: number
@@ -31,4 +31,12 @@ export type UserType = {
     status: string
     photos: PhotosType
     followed: boolean
+}
+export type DialogType = {
+    name:string
+    id:number
+}
+export type DialogMessageType = {
+    message:string
+    id:number
 }

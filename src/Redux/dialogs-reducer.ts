@@ -1,13 +1,8 @@
+import {DialogMessageType, DialogType} from "../types/types";
+
 const ADD_DIALOG_POST = 'ADD-DIALOG-POST';
 
-type DialogType = {
-    name:string
-    id:number
-}
-type MessagesType = {
-    message:string
-    id:number
-}
+
 let initialState= { dialogs: [
         {name: 'Sasha', id: 1},
         {name: 'Pasha', id: 2},
@@ -23,7 +18,7 @@ let initialState= { dialogs: [
         {id: 4, message: 'Yo'},
         {id: 5, message: 'YOOOO'},
         {id: 6, message: 'WAZZZZUUUP'}
-    ] as Array<MessagesType>
+    ] as Array<DialogMessageType>
 };
 
 type initialStateType = typeof initialState;
@@ -45,6 +40,6 @@ type AddDialogPostActionCreatorActionType={
     type:typeof ADD_DIALOG_POST
     message:string
 }
-export const addDialogPostActionCreator = (message:string):AddDialogPostActionCreatorActionType => ({type: ADD_DIALOG_POST,message});
+export const addDialogPost = (message:string):AddDialogPostActionCreatorActionType => ({type: ADD_DIALOG_POST,message});
 
 export default dialogsReducer;

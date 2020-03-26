@@ -3,7 +3,8 @@ import s from './../Dialogs.module.css';
 import {DialogMessageType} from "../../../types/types";
 
 type  PropsType={
-    message:DialogMessageType
+    message:string
+    id:number
 }
 const Message:FC<PropsType> = (props) => {
     return (

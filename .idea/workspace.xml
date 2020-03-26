@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c68d860a-6e07-4fef-8ef3-cb3537e3bf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/dialogs-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/dialogs-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/profile-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profile-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialog/Dialog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialog/Dialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Preloader/Preloader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Preloader/Preloader.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,16 +54,6 @@
     <property name="ts.external.directory.path" value="C:\it-kamasutra\kabzda\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\it-kamasutra\kabzda\src\components\common\Paginator" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\Profile\MyPosts" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\Profile" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\Navbar" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\Header" />
-    </key>
-    <key name="es6.move.members.recent.items">
-      <recent name="C:\it-kamasutra\kabzda\src\components\Profile\ProfileInfo\ProfileDataForm.jsx" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\it-kamasutra\kabzda\src\components\Users" />
       <recent name="C:\it-kamasutra\kabzda\src\components\common\Paginator" />
@@ -73,8 +61,18 @@
       <recent name="C:\it-kamasutra\kabzda\src\components\Profile\ProfileInfo" />
       <recent name="C:\it-kamasutra\kabzda\src\components\common\FormsControls" />
     </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="C:\it-kamasutra\kabzda\src\components\Profile\ProfileInfo\ProfileDataForm.jsx" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\it-kamasutra\kabzda\src\components\common\Paginator" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\Profile\MyPosts" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\Profile" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\Navbar" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\Header" />
+    </key>
   </component>
-  <component name="RunManager" selected="Node.js.Preloader.jsx">
+  <component name="RunManager" selected="Node.js.Preloader.tsx">
     <configuration name="after deleting length of messages should be decrement" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -117,12 +115,12 @@
     <configuration name="Paginator.tsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/common/Paginator/Paginator.tsx" working-dir="$PROJECT_DIR$/src/components/common/Paginator">
       <method v="2" />
     </configuration>
-    <configuration name="Preloader.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/common/Preloader/Preloader.jsx" working-dir="$PROJECT_DIR$/src/components/common/Preloader">
+    <configuration name="Preloader.tsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/common/Preloader/Preloader.tsx" working-dir="$PROJECT_DIR$/src/components/common/Preloader">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.Preloader.jsx" />
+        <item itemvalue="Node.js.Preloader.tsx" />
         <item itemvalue="Node.js.Paginator.tsx" />
         <item itemvalue="Jest.after deleting length of messages should be decrement" />
         <item itemvalue="Jest.new post should be correct" />
@@ -270,7 +268,8 @@
       <workItem from="1584888432676" duration="7949000" />
       <workItem from="1584984256341" duration="7101000" />
       <workItem from="1585070563829" duration="4370000" />
-      <workItem from="1585130659222" duration="6144000" />
+      <workItem from="1585130659222" duration="6805000" />
+      <workItem from="1585211380802" duration="3500000" />
     </task>
     <task id="LOCAL-00001" summary="added props callback">
       <created>1577651757209</created>
@@ -412,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585083356395</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="changed DialogsContainer, Dialogs, Message on typescript format">
+      <created>1585169897859</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1585169897859</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +460,8 @@
     <MESSAGE value="fixed all reducers action &amp; dispatch/getState types" />
     <MESSAGE value="changed api on typescript format" />
     <MESSAGE value="changed Header, HeaderContainer, Music, Navbar, News, Settings on typescript format" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed Header, HeaderContainer, Music, Navbar, News, Settings on typescript format" />
+    <MESSAGE value="changed DialogsContainer, Dialogs, Message on typescript format" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed DialogsContainer, Dialogs, Message on typescript format" />
   </component>
   <component name="WindowStateProjectService">
     <state x="449" y="132" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579951593308">
@@ -465,10 +472,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="436" y="95" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578931572041" />
-    <state x="381" y="0" key="CommitChangelistDialog2" timestamp="1585083355654">
+    <state x="381" y="0" key="CommitChangelistDialog2" timestamp="1585169897010">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="381" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585083355654" />
+    <state x="381" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585169897010" />
     <state x="772" y="75" key="FileChooserDialogImpl" timestamp="1584736317228">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -545,10 +552,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="323" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581090083407" />
-    <state x="261" y="79" width="1014" height="672" key="Vcs.Push.Dialog.v2" timestamp="1585083359584">
+    <state x="261" y="79" width="1014" height="672" key="Vcs.Push.Dialog.v2" timestamp="1585169899871">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="261" y="79" width="1014" height="672" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585083359584" />
+    <state x="261" y="79" width="1014" height="672" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585169899871" />
     <state x="410" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585082628002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -25,7 +25,6 @@ let initialState = {
 };
 type InitialStateType = typeof initialState
 const usersReducer = (state = initialState, action:UsersActionTypes):InitialStateType => {
-
     switch (action.type) {
         case FOLLOW:
             return {

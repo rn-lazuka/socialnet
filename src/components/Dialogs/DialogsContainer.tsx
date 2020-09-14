@@ -1,4 +1,4 @@
-import {addDialogPost} from "../../Redux/dialogs-reducer";
+import {actions} from "../../Redux/dialogs-reducer";
 import Dialogs from "./Dialogs";
 import {connect, DefaultRootState} from "react-redux";
 import {withAuthRedirect} from "../../hok/withAuthRedirect";
@@ -7,10 +7,8 @@ import {DialogMessageType, DialogType} from "../../types/types";
 import {AppStateType} from "../../Redux/redux-store";
 
 type MapStatePropsType = {
-
     dialogs: Array<DialogType>
     messages: Array<DialogMessageType>
-
 }
 type MapDispatchPropsType = {
     addDialogPost: (message:string) => void
@@ -26,6 +24,6 @@ let mapStateToProps =(state:AppStateType):MapStatePropsType=>{
 
 
 export default compose (
-    connect<MapStatePropsType, MapDispatchPropsType, {},AppStateType> (mapStateToProps,{addDialogPost}),
+    connect<MapStatePropsType, MapDispatchPropsType, {},AppStateType> (mapStateToProps,actions),
     withAuthRedirect
 )(Dialogs)

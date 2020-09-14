@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c68d860a-6e07-4fef-8ef3-cb3537e3bf49" name="Default Changelist" comment="connected login page to app">
+      <change afterPath="$PROJECT_DIR$/src/api/auth-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/profile-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/security-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/users-api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/app-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/auth-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/dialogs-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/dialogs-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profile-reducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profile-reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profile-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profile-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/store.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/users-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/objects-helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/objects-helpers.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,16 +63,6 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\it-kamasutra\kabzda\src\components\Users" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\common\Paginator" />
-      <recent name="C:\it-kamasutra\kabzda\src\Redux" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\Profile\ProfileInfo" />
-      <recent name="C:\it-kamasutra\kabzda\src\components\common\FormsControls" />
-    </key>
-    <key name="es6.move.members.recent.items">
-      <recent name="C:\it-kamasutra\kabzda\src\components\Profile\ProfileInfo\ProfileDataForm.jsx" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\it-kamasutra\kabzda\src\components\common\Paginator" />
       <recent name="C:\it-kamasutra\kabzda\src\components\Profile\MyPosts" />
@@ -65,8 +70,22 @@
       <recent name="C:\it-kamasutra\kabzda\src\components\Navbar" />
       <recent name="C:\it-kamasutra\kabzda\src\components\Header" />
     </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="C:\projects\kabzda\src\Redux\redux-store.ts" />
+      <recent name="C:\projects\kabzda\src\api\api.ts" />
+      <recent name="C:\projects\kabzda\src\api\security-api.ts" />
+      <recent name="C:\projects\kabzda\src\api\auth-api.ts" />
+      <recent name="C:\projects\kabzda\src\api\profile-api.ts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\it-kamasutra\kabzda\src\components\Users" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\common\Paginator" />
+      <recent name="C:\it-kamasutra\kabzda\src\Redux" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\Profile\ProfileInfo" />
+      <recent name="C:\it-kamasutra\kabzda\src\components\common\FormsControls" />
+    </key>
   </component>
-  <component name="RunManager" selected="Node.js.Preloader.tsx">
+  <component name="RunManager" selected="Jest.profile-reducer.test.ts">
     <configuration name="after deleting length of messages should be decrement" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -80,30 +99,14 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="new post should be added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="profile-reducer.test.ts" type="JavaScriptTestRunnerJest" temporary="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/Redux/profile-reducer.test.js" />
-      <test-names>
-        <test-name value="new post should be added" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="new post should be correct" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/Redux/profile-reducer.test.js" />
-      <test-names>
-        <test-name value="new post should be correct" />
-      </test-names>
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/Redux/profile-reducer.test.ts" />
       <method v="2" />
     </configuration>
     <configuration name="Paginator.tsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/common/Paginator/Paginator.tsx" working-dir="$PROJECT_DIR$/src/components/common/Paginator">
@@ -112,13 +115,23 @@
     <configuration name="Preloader.tsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/common/Preloader/Preloader.tsx" working-dir="$PROJECT_DIR$/src/components/common/Preloader">
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="Jest.profile-reducer.test.ts" />
         <item itemvalue="Node.js.Preloader.tsx" />
         <item itemvalue="Node.js.Paginator.tsx" />
         <item itemvalue="Jest.after deleting length of messages should be decrement" />
-        <item itemvalue="Jest.new post should be correct" />
-        <item itemvalue="Jest.new post should be added" />
       </list>
     </recent_temporary>
   </component>
@@ -299,6 +312,10 @@
       <workItem from="1599586979271" duration="601000" />
       <workItem from="1599635208483" duration="120000" />
       <workItem from="1599919850772" duration="7973000" />
+      <workItem from="1600020144135" duration="9650000" />
+      <workItem from="1600029958218" duration="2709000" />
+      <workItem from="1600065726853" duration="1178000" />
+      <workItem from="1600066973487" duration="630000" />
     </task>
     <task id="LOCAL-00001" summary="added props callback">
       <created>1577651757209</created>
@@ -516,38 +533,41 @@
     <option name="LAST_COMMIT_MESSAGE" value="connected login page to app" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="282" y="0" key="CommitChangelistDialog2" timestamp="1599925747718">
+    <state x="282" y="0" key="CommitChangelistDialog2" timestamp="1600020158485">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="282" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599925747718" />
-    <state x="772" y="75" key="FileChooserDialogImpl" timestamp="1599635326479">
+    <state x="282" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600020158485" />
+    <state x="772" y="75" key="FileChooserDialogImpl" timestamp="1600066317992">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="772" y="75" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599635326479" />
-    <state x="145" y="0" key="SettingsEditor" timestamp="1599922887902">
+    <state x="772" y="75" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600066317992" />
+    <state width="1509" height="195" key="GridCell.Tab.0.bottom" timestamp="1600028826971">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="145" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599922887902" />
-    <state x="390" y="61" width="718" height="668" key="find.popup" timestamp="1599938289722">
+    <state width="1509" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600028826971" />
+    <state width="1509" height="195" key="GridCell.Tab.0.center" timestamp="1600028826970">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="390" y="61" width="718" height="668" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1599938289722" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Redux/profile-reducer.test.js</url>
-          <line>12</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Redux/users-reducer.ts</url>
-          <line>98</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="1509" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600028826970" />
+    <state width="1509" height="195" key="GridCell.Tab.0.left" timestamp="1600028826970">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1509" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600028826970" />
+    <state width="1509" height="195" key="GridCell.Tab.0.right" timestamp="1600028826971">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1509" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600028826971" />
+    <state x="27" y="0" key="SettingsEditor" timestamp="1600029324724">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="27" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600029324724" />
+    <state x="390" y="61" width="718" height="668" key="find.popup" timestamp="1600023275910">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="390" y="61" width="718" height="668" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1600023275910" />
+    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1600028906636">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600028906636" />
   </component>
 </project>
